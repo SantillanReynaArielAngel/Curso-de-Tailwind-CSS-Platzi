@@ -1,5 +1,8 @@
-@tailwind base;
+/* inicializa los elemtos Html */
+/* @tailwind base;  */
 
-/* @tailwind components;
 
-@tailwind utilities; */
+/* @tailwind components; */
+
+/* Nos genera el codigo de utilerias */
+@tailwind utilities;
