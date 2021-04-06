@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="m-8">
+    <!-- USO DE FLEXBOX: Se indicar que usaremos "flex" especificando la misma palabra en el class
+
+        Direcional:
+        flex-row: Elementos horizontalmente alineado a la izquierda
+        flex-col: Elementos verticalmente alineado
+        flex-row-reverse: Elemntos alineados derecha en reversa
+        flex-col-reverse: Elementos verticalmente alineado en reversa
+
+        Justificar Cuadros:
+        justify-start: es el de por defecto (de izq a deal principio de la caja)
+        justify-end: Coloca los elementos al final de la caja
+        justify-between: Coloca los elentos al mismo expacio en los EXTREMOS
+        justify-around: Coloca el mismo esoacio de separacion entre todos los elemntos(lados e intermedios)
+        
+        Alineado de Elementos:
+        items-start: Coloca los elemntos al inicio derecho de la caja(espetando los padings de la caja contenedora como tambien el margin del propio elemento)
+        flex-center: Alinea los elementos al centro de la caja del lado izquierdo (espetando los padings de la caja contenedora como tambien el margin del propio elemento)
+        items-end Alinea los elementos al centro de la caja del lado izquierdo (espetando los padings de la caja contenedora como tambien el margin del propio elemento)
+        items-stretch: Extiende(estira) todos los elementos de arriba hasta abajo
+        items-baseline: Alinea todos los elementos en la recta de un texto(para textos largos se alinea  al primer parrafo) 
+    
+        order-valorint: Ordena los elementos segun el orden especificado, es util para especificar el ordden de los elementos en diferentes pantallas cuando trabajamos de manera responsiva 
+    -->
+    <div class=" h-64 flex items-baseline p-8 bg-gray-800">
+        <div class="bg-gray-300 order-3 px-4 py-2 m-2">Texto</div>
+        <div class="bg-gray-300 order-2 px-4 py-2 m-2">2</div>
+        <div class="bg-gray-300 order-1 px-4 py-2 m-2">3</div>
+        <div class="bg-gray-300 order-10 px-4 py-2 m-2">4</div>
+    </div>
+    
+</body>
+</html>
