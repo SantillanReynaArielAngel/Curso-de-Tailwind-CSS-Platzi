@@ -37,6 +37,87 @@
         <div class="bg-gray-300 order-1 px-4 py-2 m-2">3</div>
         <div class="bg-gray-300 order-10 px-4 py-2 m-2">4</div>
     </div>
-    
+
+    <!-- GRID BASICO CON FLEXBOX  -->
+    <div class="flex mt-5">
+        <!-- Se puede utilizar p- o h- para que el elemnto tenga forma y se muestre 
+        Nota: utilizar w-full en mas de 1 elemtos hace que estos compartan el ancho, talvez es mas aconsejable utilizar porcentajes(1/2 =50%, etc)-->
+        <div class="w-1/6 p-4 bg-blue-500"></div> 
+        <div class="w-1/6 p-4 bg-red-500"></div>
+        <div class="w-1/6 p-4 bg-blue-500"></div> 
+        <div class="w-1/6 p-4 bg-red-500"></div>
+        <div class="w-1/6 p-4 bg-blue-500"></div>
+        <div class="w-1/6 p-4 bg-red-500"></div>
+    </div>
+
+    <!-- Grid Responsivo con Columnas de Anchura Fija(Numerador IGUAL en todas las pseudo-clases Ej: w-numerador/3) -->
+
+    <!-- flex-wrap: Hacer reponsivo un elelmento y con esto logramos que
+        cuando uno de los elemento exceda el tamaño, ese elemento pase al siguiente renglón.
+        Pseudo-clases(tamaños de pantallas):
+        xs(default de anchura fija)
+        sm(celulares pequeños)
+        md(tablets)
+        lg(monitores tamaño estandar)
+        xl(Monitores grandes)
+
+        ColorDeFondoSegunTamañoDePantalla
+        pseudo-clase:bg-color-intensidad
+        xs(default de anchura fija)
+        sm:bg-red-500, sm:bg-green-500, sm:bg-blue-500
+        md:bg-red-500, md:bg-green-500, md:bg-blue-500
+        lg:bg-red-500, lg:bg-green-500, lg:bg-blue-500
+        xl:bg-red-500, xl:bg-green-500, xl:bg-blue-500
+        2xl:bg-red-500, 2xl:bg-green-500, 2xl:bg-blue-500
+
+        Con el uso de las pseudo-classes responsivas de sm(celulares pequeños), md(tablets), lg(monitores tamaño estandar) y xl(Monitores grandes) logramos el numero
+        de columnas deseada por tamaño de pantalla.
+        Ejemplo: 
+        w-full
+        xs(default de anchura fija)
+        sm:w-1/2(2 columnas) 
+        md:w-1/3(3 columnas) 
+        lg:w-1/4(4 columnas) 
+        xl:w-1/6(6 columnas)
+
+     -->
+    <div class="flex flex-wrap m-4 sm:bg-gray-500 md:bg-red-500 lg:bg-blue-500 xl:bg-yellow-500 2xl:bg-pink-500"> 
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4 bg-green-500 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4 bg-green-700 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4 bg-green-500 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4 bg-green-700 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4 bg-green-500 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4 bg-green-700 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4 bg-green-500 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4 bg-green-700 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4 bg-green-500 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4 bg-green-700 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4 bg-green-500 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4 bg-green-700 mb-1"></div>
+    </div>
+
+
+    <!-- Grid Responsivo con Columnas de Anchura Variable(Numerador DIFERENTE en todas las pseudo-clases Ej: w-numerador/3)     -->
+
+    <div class="flex flex-wrap m-4 sm:bg-gray-500 md:bg-red-500 lg:bg-blue-500 xl:bg-yellow-500 2xl:bg-pink-500">
+        <div class="w-full sm:w-1/2 md:w-2/5 lg:w-1/6 xl:w-7/12 p-4 bg-green-700 mb-1"></div>
+        <div class="w-full sm:w-1/3 md:w-1/5 lg:w-3/6 xl:w-1/12 p-4 bg-green-500 mb-1"></div>
+        <div class="w-full sm:w-1/6 md:w-2/5 lg:w-2/6 xl:w-4/12 p-4 bg-green-900 mb-1"></div>
+        <div class="w-full sm:w-1/6 md:w-1/5 lg:w-1/6 xl:w-1/12 p-4 bg-green-700 mb-1"></div>
+        <div class="w-full sm:w-1/3 md:w-3/5 lg:w-1/6 xl:w-5/12 p-4 bg-green-500 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-1/5 lg:w-4/6 xl:w-6/12 p-4 bg-green-900 mb-1"></div>
+        <div class="w-full sm:w-1/3 md:w-1/5 lg:w-2/6 xl:w-3/12 p-4 bg-green-700 mb-1"></div>
+        <div class="w-full sm:w-1/6 md:w-1/5 lg:w-2/6 xl:w-4/12 p-4 bg-green-500 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-3/5 lg:w-2/6 xl:w-5/12 p-4 bg-green-900 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-3/5 lg:w-3/6 xl:w-8/12 p-4 bg-green-700 mb-1"></div>
+        <div class="w-full sm:w-1/6 md:w-1/5 lg:w-2/6 xl:w-2/12 p-4 bg-green-500 mb-1"></div>
+        <div class="w-full sm:w-1/3 md:w-1/5 lg:w-1/6 xl:w-2/12 p-4 bg-green-900 mb-1"></div>
+        <div class="w-full sm:w-1/2 md:w-2/5 lg:w-2/6 xl:w-5/12 p-4 bg-green-700 mb-1"></div>
+        <div class="w-full sm:w-1/3 md:w-1/5 lg:w-1/6 xl:w-3/12 p-4 bg-green-500 mb-1"></div>
+        <div class="w-full sm:w-1/6 md:w-2/5 lg:w-3/6 xl:w-4/12 p-4 bg-green-900 mb-1"></div>
+    </div>
+
+
+
 </body>
 </html>
