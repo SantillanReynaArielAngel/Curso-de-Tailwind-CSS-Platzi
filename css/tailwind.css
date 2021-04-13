@@ -1,8 +1,20 @@
-/* inicializa los elemtos Html */
-/* @tailwind base;  */
+@tailwind base;
 
+@tailwind components;
 
-/* @tailwind components; */
-
-/* Nos genera el codigo de utilerias */
 @tailwind utilities;
+
+
+/* IMPORTANTE: SIEMPRE QUE SE CREE O MODIFIQUE UNA UTILIDAD CORRER EL COMANDO "npm run build"; para que se puedan usar dichas utilidades desde el archivo style.css */
+
+/* Nota: Es recomendado usar la notacion .padre .hover .hijo{...} */
+
+@variants hover{
+    .zoom{
+        transform: scale(2);
+    }
+
+    .rotate-45{
+        transform:rotate(45deg);
+    }
+}
