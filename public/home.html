@@ -17,7 +17,60 @@
         <div class="text-2xl">&equiv;</div>
     </div>
 
-    <footer class="bg-secundary text-white absolute bottom-0 w-full">
+    <main class=" mb-8">
+        <div class="h-56 md:h-100 md:bg-center  bg-no-repeat bg-cover bg-bottom " style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80');"></div>
+        
+        <div class="container mx-auto md:flex">    
+            <div class="mx-2 md:mx-0 mt-4 md:w-1/2 md:flex md:bg-white rounded-lg"> <!--flex-row-reverse: invierte la posiison de los elememtos-->
+                <div>
+                    <img class="w-full md:w-48 md:h-full object-cover object-left rounded-lg md:rounded-r-none" src="https://images.unsplash.com/photo-1530554764233-e79e16c91d08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80" alt="">
+                </div>
+                <div class="bg-white rounded-lg -mt-2 mx-2 p-2 shadow-lg relative md:bg-transparent md:shadow-none"><!--relative: nos coloca encima el lemento-->
+                    <h2 class="text-xl uppercase tracking-tight font-semibold text-gray-900 md:text-lg">Haburguesa Con Queso</h2>
+                    <p class="text-gray-700 leading-snug">Hamburguesa de queso con aderezo chiplote</p>
+                    <div class=" mt-2 text-sm font-semibold text-gray-700">15Bs (BO)</div>
+                    <div class="mt-2 text-yellow-700 text-xs ">&starf;&starf;&starf;&starf;&star; / 36 reseñas</div>
+                </div>
+            </div>
+
+            <div class="mx-2 md:mx-0 mt-4 md:ml-2 md:w-1/2 md:flex md:bg-white rounded-lg"> <!--flex-row-reverse: invierte la posiison de los elememtos-->
+                <div>
+                    <img class="w-full md:w-48 md:h-full object-cover object-left rounded-lg md:rounded-r-none" src="https://images.unsplash.com/photo-1530554764233-e79e16c91d08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80" alt="">
+                </div>
+                <div class="bg-white rounded-lg -mt-2 mx-2 p-2 shadow-lg relative md:bg-transparent md:shadow-none"><!--relative: nos coloca encima el lemento-->
+                    <h2 class="text-xl uppercase tracking-tight font-semibold text-gray-900 md:text-lg">Haburguesa Con Queso</h2>
+                    <p class="text-gray-700 leading-snug">Hamburguesa de queso con aderezo chiplote</p>
+                    <div class="mt-2 text-sm font-semibold text-gray-700">15Bs (BO)</div>
+                    <div class="mt-2 text-yellow-700 text-xs ">&starf;&starf;&starf;&starf;&star; / 36 reseñas</div>
+                </div>
+            </div>
+
+            <!-- leading-snug: controla el espacio entre lineas  -->
+            <div class="mx-2">
+                <div>
+                    <div> Nombre </div>
+                    <!-- shadow-outline: se depreco, ahora se utiliza  "ring"-->
+                    <input class="w-full leading-snug text-gray-800 hover:bg-white  focus:outline-none focus:ring  py-1 px-4 rounded border border-blue-300 bg-gray-200 placeholder-secundary" type="text" placeholder="Nombre">
+                </div>
+                <div>
+                    <div> Email </div>
+                    <input class="w-full leading-snug text-gray-800 hover:bg-white  focus:outline-none focus:ring py-1 px-4 rounded border border-blue-300 bg-gray-200 placeholder-secundary" type="email" placeholder="Email">
+                </div>
+                <div>
+                    <div> Comentarios </div>
+                    <textarea class="w-full leading-snug text-gray-800 hover:bg-white  focus:outline-none focus:ring py-1 px-4 rounded border border-blue-300 bg-gray-200 placeholder-secundary"></textarea>
+                </div>
+                <div>
+                    <!-- mx-auto block: se tienne que utilizar los 2 para que se centree -->
+                    <button class="bg-gray-500 px-4 py-1 rounded shadow-xl hover:shadow-none hover:bg-gray-700 hover:text-white mx-auto block"  >Enviar</button>
+                </div>
+            </div>
+        </div>
+    </main> 
+    
+   
+    
+    <footer class="bg-secundary text-white w-full"> <!--absolute bottom-0: pone los elementos en la parte de abajo-->
     <div class="md:flex md:flex-row-reverse justify-around">
         <div class="ml-8 mt-4">
             <div class="hover:text-blue-600"><i class="fa fa-facebook"></i> /facebook</div>
