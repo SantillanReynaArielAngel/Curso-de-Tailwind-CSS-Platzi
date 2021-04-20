@@ -9,13 +9,18 @@
     <!-- incluyendo iconos -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="px-2 bg-secundary text-white flex justify-between items-center">
-        <div>
-            <img class="h-8 py-1" src="./images/platzi-food.png">
+        <div class="px-2 bg-secundary text-white flex justify-between items-center">
+            <div>
+                <img class="h-8 py-1" src="./images/platzi-food.png">
+            </div>
+            <div class="text-2xl">&equiv;</div>
         </div>
-        <div class="text-2xl">&equiv;</div>
-    </div>
+        <!-- <div class="mx-2">
+            <input class="from-control" type="search" placeholder="Buscar">
+        </div> -->
+ 
 
     <main class=" mb-8">
         <div class="h-56 md:h-100 md:bg-center  bg-no-repeat bg-cover bg-bottom " style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80');"></div>
@@ -44,28 +49,28 @@
                     <div class="mt-2 text-yellow-700 text-xs ">&starf;&starf;&starf;&starf;&star; / 36 reseñas</div>
                 </div>
             </div>
-
+        </div>
             <!-- leading-snug: controla el espacio entre lineas  -->
-            <div class="mx-2">
+            <div class="mx-2 mt-4 container mx-auto">
                 <div>
                     <div> Nombre </div>
                     <!-- shadow-outline: se depreco, ahora se utiliza  "ring"-->
-                    <input class="w-full leading-snug text-gray-800 hover:bg-white  focus:outline-none focus:ring  py-1 px-4 rounded border border-blue-300 bg-gray-200 placeholder-secundary" type="text" placeholder="Nombre">
+                    <input class="form-control" type="text" placeholder="Nombre">
                 </div>
                 <div>
                     <div> Email </div>
-                    <input class="w-full leading-snug text-gray-800 hover:bg-white  focus:outline-none focus:ring py-1 px-4 rounded border border-blue-300 bg-gray-200 placeholder-secundary" type="email" placeholder="Email">
+                    <input class="form-control" type="email" placeholder="Email">
                 </div>
                 <div>
                     <div> Comentarios </div>
-                    <textarea class="w-full leading-snug text-gray-800 hover:bg-white  focus:outline-none focus:ring py-1 px-4 rounded border border-blue-300 bg-gray-200 placeholder-secundary"></textarea>
+                    <textarea class="form-control"></textarea>
                 </div>
                 <div>
                     <!-- mx-auto block: se tienne que utilizar los 2 para que se centree -->
-                    <button class="bg-gray-500 px-4 py-1 rounded shadow-xl hover:shadow-none hover:bg-gray-700 hover:text-white mx-auto block"  >Enviar</button>
+                    <button class="btn btn-primary">Enviar</button>
                 </div>
             </div>
-        </div>
+    
     </main> 
     
    

@@ -1,14 +1,50 @@
 @tailwind base;
 
 @tailwind components;
+/* @apply: Lo utilizaremos para inicializar etiquetas que podemos reutilizar los estilos */
+h1{
+    @apply text-3xl text-green-700 font-semibold;
+}
+
+h2{
+    @apply text-xl text-blue-500 font-sans;
+}
+
+h3{
+    @apply text-sm text-red-600 font-light;
+}
+
+.form-control{
+    @apply w-full leading-snug text-gray-800 py-1 px-4 rounded border border-blue-300  bg-gray-200 placeholder-secundary;
+}
+
+.form-control:hover{
+    @apply bg-white;
+}
+
+.form-control:focus{
+    @apply outline-none ring;
+}
+
+
+.btn{
+    @apply bg-gray-500 px-4 py-1 rounded shadow-xl mx-auto block;
+}
+
+.btn-primary{
+    @apply bg-yellow-600;
+}
+
+
+/* @apply hover:shadow-none hover:bg-gray-700 hover:text-white; */
+.btn:hover{
+    @apply shadow-none bg-gray-700 text-white; 
+}
+
 
 @tailwind utilities;
-
-
 /* IMPORTANTE: SIEMPRE QUE SE CREE O MODIFIQUE UNA UTILIDAD CORRER EL COMANDO "npm run build"; para que se puedan usar dichas utilidades desde el archivo style.css */
-
 /* Nota: Es recomendado usar la notacion .padre .hover .hijo{...} */
-
 @variants hover{
     .zoom{
         transform: scale(2);
@@ -18,3 +54,5 @@
         transform:rotate(45deg);
     }
 }
+
+

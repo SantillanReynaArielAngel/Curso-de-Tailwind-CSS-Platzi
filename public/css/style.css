@@ -585,6 +585,111 @@ video {
   }
 }
 
+/* @apply: Lo utilizaremos para inicializar etiquetas que podemos reutilizar los estilos */
+
+h1{
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(4, 120, 87, var(--tw-text-opacity));
+}
+
+h2{
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(59, 130, 246, var(--tw-text-opacity));
+}
+
+h3{
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(220, 38, 38, var(--tw-text-opacity));
+}
+
+.form-control{
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(147, 197, 253, var(--tw-border-opacity));
+  border-radius: 0.25rem;
+  border-width: 1px;
+  line-height: 1.375;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.form-control::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(53, 53, 53, var(--tw-placeholder-opacity));
+}
+
+.form-control:-ms-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(53, 53, 53, var(--tw-placeholder-opacity));
+}
+
+.form-control::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(53, 53, 53, var(--tw-placeholder-opacity));
+}
+
+.form-control {
+  --tw-text-opacity: 1;
+  color: rgba(31, 41, 55, var(--tw-text-opacity));
+  width: 100%;
+}
+
+.form-control:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.form-control:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.btn{
+  --tw-bg-opacity: 1;
+  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.btn-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
+}
+
+/* @apply hover:shadow-none hover:bg-gray-700 hover:text-white; */
+
+.btn:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+  --tw-shadow: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -11564,11 +11669,15 @@ video {
 }
 
 .h-80 {
-  height: 20rem;
+  height: 20rem ;
 }
 
 .h-96 {
   height: 24rem;
+}
+
+.h-100 {
+  height: 25rem;
 }
 
 .h-auto {
@@ -42621,11 +42730,15 @@ video {
   }
 
   .sm\:h-80 {
-    height: 20rem;
+    height: 20rem ;
   }
 
   .sm\:h-96 {
     height: 24rem;
+  }
+
+  .sm\:h-100 {
+    height: 25rem;
   }
 
   .sm\:h-auto {
@@ -73580,11 +73693,15 @@ video {
   }
 
   .md\:h-80 {
-    height: 20rem;
+    height: 20rem ;
   }
 
   .md\:h-96 {
     height: 24rem;
+  }
+
+  .md\:h-100 {
+    height: 25rem;
   }
 
   .md\:h-auto {
@@ -104539,11 +104656,15 @@ video {
   }
 
   .lg\:h-80 {
-    height: 20rem;
+    height: 20rem ;
   }
 
   .lg\:h-96 {
     height: 24rem;
+  }
+
+  .lg\:h-100 {
+    height: 25rem;
   }
 
   .lg\:h-auto {
@@ -135498,11 +135619,15 @@ video {
   }
 
   .xl\:h-80 {
-    height: 20rem;
+    height: 20rem ;
   }
 
   .xl\:h-96 {
     height: 24rem;
+  }
+
+  .xl\:h-100 {
+    height: 25rem;
   }
 
   .xl\:h-auto {
@@ -166457,11 +166582,15 @@ video {
   }
 
   .\32xl\:h-80 {
-    height: 20rem;
+    height: 20rem ;
   }
 
   .\32xl\:h-96 {
     height: 24rem;
+  }
+
+  .\32xl\:h-100 {
+    height: 25rem;
   }
 
   .\32xl\:h-auto {
@@ -186401,3 +186530,5 @@ video {
             animation: bounce 1s infinite;
   }
 }
+
+
