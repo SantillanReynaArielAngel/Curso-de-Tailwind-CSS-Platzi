@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <!--IMPORTANTE COLOCAR ESTO, SIN ESTO TAILWIND NO FUNCIONA -->
+    <link rel="stylesheet" href="./css/style.css">  
+
+</head>
+<body class="mx-20">
+    <!--
+        DISPLAY: 
+        block: El bloque abarca toda la pantalla disponible
+        inline-block: solo muestran el espacio neccesario para mostrar lo que tiene
+        inline: similar al anterior pero no nos preocupams por la altura
+        hidden: Oculta el elemento  -->
+    <div class="mt-8  bg-gray-700">
+
+        <div class="inline px-4  py-2 bg-gray-500">1</div>
+        <div class="inline px-4  py-2 mt-2 bg-gray-500">2</div>
+        <div class="hidden px-4  py-2 bg-gray-500">3</div>
+        <div class="inline px-4  py-2 bg-gray-500">4</div>
+    </div>
+
+    <div class=" mt-5 p-2  bg-gray-300">
+        <div class="block text-4xl text-center bg-gray-500">A</div>
+        <div class="block text-4xl text-center bg-gray-500 mt-1">1</div>
+        <div class="block text-4xl text-center bg-gray-500 mt-1">a</div>
+    </div>
+
+    <div class=" mt-5  bg-gray-300">
+        <div class=" inline-block text-4xl  bg-gray-500">A</div>
+        <div class=" inline-block text-4xl  bg-gray-500 mt-1">1</div>
+        <div class=" inline-block text-4xl  bg-gray-500 mt-1">a</div>
+    </div>
+
+    <div class=" mt-5 bg-gray-300">
+        <div class="inline text-4xl bg-gray-500">A</div>
+        <div class="inline text-4xl bg-gray-500 mt-1">1</div>
+        <div class="inline text-4xl bg-gray-500 mt-1">a</div>
+    </div>
+
+    <div class=" mt-5 bg-gray-300">
+        <div class=" hidden text-4xl bg-gray-500">A</div>
+        <div class=" hidden text-4xl bg-gray-500 mt-1">1</div>
+        <div class=" inline text-4xl bg-gray-500 mt-1">a</div>
+    </div>
+
+
+    
+    </body>
+</html>
